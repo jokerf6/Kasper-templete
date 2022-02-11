@@ -1,0 +1,882 @@
+/*global variable*/
+:root{
+    --main-color:#19c8fa;
+    --main-margin-top: 40px;
+    --main-padding-top: 60px;
+    --main-margin-bottom: 40px;
+    --main-padding-bottom: 60px;
+    --second-color:rgb(15 116 143 / 70%);
+}
+/* global rules*/
+ul{
+    list-style: none;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: "Open Sans", sans-serif;
+}
+  .container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.special {
+    font-size: 250%;
+    font-weight: 500;
+    letter-spacing: -2px;
+    text-align: center;
+ }
+ .special +  p{
+     color: #777;
+     position: absolute;
+     left: 50%;
+     padding-top: 90px;;
+     transform: translate(-50%, -50%);
+     line-height: 1.8;
+     margin-top: 20px;
+     text-align: center;
+     max-width: 40%;
+    }
+  /*small*/
+  @media (min-width: 768px) {
+    .container{
+      width: 750px;
+    }
+  }
+  /*mediam*/
+  @media (min-width: 992px) {
+    .container{
+      width: 970px;
+    }
+  }
+  /*large*/
+  @media (min-width: 1200px) {
+    .container{
+      width: 1170px;
+    }
+  }
+  /*start Landing*/
+.landing{
+    background-color: rgb(0 0 0 /60%);
+    background-size: cover;
+    height: 100vh;
+}
+.landing2{
+     background-image: url(../images/landing.jpg)  ;  
+     background-size: cover;
+       height: 100vh;
+}
+.landing .container{
+    position: relative;
+}
+.landing .links a{
+    padding-bottom: 30px !important;
+    transition: 0.3s;
+}
+.landing .links a:hover{
+ border-bottom: 1px solid var(--main-color);
+ color: var(--main-color)
+}
+.tab{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #777;
+}
+.tab ul{
+    margin-right: 20px;
+}
+.tab ul li{
+    display: inline-block;
+    padding-right: 20px;
+}
+.tab ul li a{
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 90%;
+    font-weight: 400;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links p{
+    background-color: white;
+    height: 30px;
+    width: 1px;
+    margin-right: 40px;
+}
+.par{
+    padding: 20px;
+    position: absolute;
+    top: calc(100vh - 476px);
+    left: -100px;
+    width: 676px;
+    height: 328px;
+    background-color:rgb(15 116 143 / 70%);
+    color: white;
+}
+.par h2{
+ font-size: 30px;
+ font-weight: 400;
+ padding-top: 30px;
+ padding-bottom: 20px;
+ line-height: 1.5;
+  margin-left: 105px;
+}
+.par p{
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    line-height: 1.8;
+     margin-left: 105px;
+   }
+   .links i{
+       color: white;
+       font-size: 20px;
+       position: absolute;
+       transform: translate(-50%,-50%);
+       padding-right: 20px;
+   }
+  /*end Landing*/
+  /*Start services*/
+  .services{
+margin-bottom: var(--main-margin-bottom);
+margin-top: var(--main-margin-top);
+padding-top: var(--main-padding-top);
+padding-bottom: var(--main-padding-bottom);
+}
+  .services .cont{
+  text-align: center;
+  position: relative;
+  margin-bottom: 150px;
+}
+.services .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    gap: 50px;
+}
+.services .card p{
+color: #777;;
+font-size: 16px;
+line-height: 1.8;
+width: 100%;
+}
+.services .card h3{
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+.services .card .text{
+    padding-left: 50px;
+}
+.services .card {
+    display: flex;
+    justify-content: space-between;
+}
+  /*End services*/
+  /*Start design*/
+  .design {
+    position: relative;
+    background-image: url(../images/design-features.jpg);
+    background-size: cover;
+    height: 90vh;
+    overflow: hidden;
+}
+.design::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+  }
+  .design .par{
+      position: absolute;
+      left: 80%;
+      top: 50%;
+     width: 66%;
+     transform: translate(-50% , -50%);
+     height: 60%;
+  }
+  .design .par h2{
+   margin-left: 20px;
+   padding: 20px;;
+   margin-bottom: 20px;;
+   margin-top: 20px;
+   text-transform: uppercase;
+   font-size: 25px;
+}
+.design .par ul{
+    list-style: none;
+}
+.design .par ul li{
+    margin:20px;
+    margin-left: 40px;
+}
+.design .par ul li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f108";
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+  }
+  .design .image{
+      position: absolute;
+      transform: translate(-50% , -50%);
+      left: 22%;
+      top: 60%;
+  }
+  /*End design*/
+  /*Start portfolio*/
+  .port{
+      margin-top: 40px;
+      padding-top: 60px;
+      margin-bottom: 40px;
+      padding-bottom: 60px;
+      position: relative;
+  }
+  .port .cont{
+      margin-bottom: 150px;;
+     position: relative;
+    }
+  .port .spans{
+      position: absolute;
+      left:50%;
+      transform: translate(-50% , -50%);
+      margin-top: 40px;
+  }
+  .port .spans span{
+   padding: 10px;
+  }
+  .port .spans span:first-child{
+      background-color: var(--main-color);
+      color: white;
+  }
+  .port .cards{
+      padding-top: 120px;
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+    }
+    .port .cards .card{
+        padding-bottom:1px ;
+        overflow: hidden;
+        position: relative;
+    }
+  .port .cards  img{
+      width:338px;
+      height: auto;
+      transition: 0.3s;
+  }
+  .port .cards .text{
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    transition: 0.3s;
+    bottom: -100%;
+}
+
+  .port .card .image{
+      overflow: hidden;
+  }
+  .port .card:hover img{
+        transform: rotate(3deg) scale(1.1); 
+  }
+  .port .card:hover .text{
+   bottom:0;
+}
+.port .card h4{
+    padding-top: 5px;
+    color: var(--main-color);
+}
+@media (min-width: 768px) {
+    .port .cards .card {
+      flex-basis: 50%;
+    }
+  }
+  @media (min-width: 1199px) {
+    .port .cards .card {
+        flex-basis: 25%;
+    }
+  }
+  .port a{
+      background-color: var(--main-color);
+      padding: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: white;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      bottom: 0;
+      left: 50%;
+      text-decoration: none;
+  }
+  /*End portfolio*/
+/*Start video*/
+.video{
+position: relative;
+}
+video{
+    width: 100%;
+}
+.video::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(0 0 0/40%);
+}
+.video .text{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:var(--second-color);
+    width: 100%;
+    text-align: center;
+    height: 244px;
+}
+.video h3{
+    padding: 30px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+}
+.video p{
+    margin-bottom: 30px;
+    color: white;
+}
+.video button{
+ background-color: black;
+ border: none;
+ padding: 10px 20px;
+ color: white;
+ text-transform: uppercase; 
+}
+/*End video*/
+/*Start about*/
+.about {
+    margin-top: 70px;
+    padding-top: var(--section-padding);
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+  }
+  .about img {
+    position: absolute;
+    bottom: -24%;
+    left: 20%;;
+  }
+/*End about*/
+/*start info*/
+.info{
+    background-image: url(../images/stats.png);
+    z-index: 0;
+    height: 465px;
+    position: relative;
+}
+.info::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(0 0 0 / 70%);
+}
+.info .container{
+   display: flex;
+   flex-wrap: wrap;
+   position: relative;
+}
+.info .container{
+    background-color: var(--second-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    justify-content: space-between;
+}
+.info .container .card{
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin: 0 40px;
+}
+.info .card i{
+    background-color: black;
+    border-radius: 50%;
+    padding: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.info .card h2{
+ font-size: 50px;
+ padding-bottom: 20px;;
+}
+/*End info*/
+/*Start ref*/
+.ref{
+    padding-bottom: 100px;
+}
+.ref .container .cards{
+    margin-top: var(--main-margin-top);
+    padding-top:var(--main-padding-top);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    gap: 40px;
+}
+.ref .card1{
+    position: relative;
+}
+.ref .card1 h4{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: -1;
+}
+.ref .card1 .text p{
+    text-align: center;
+   color: #777;
+   margin-bottom: 64px;
+}
+.ref .card1 .char{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ref .card1 .char .image img{
+    width: 35%;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.ref .card{
+display: flex;
+align-items: center;
+margin-bottom: 50px;
+}
+.ref .card p{
+line-height: 1.8;
+margin-right: 30px;
+font-size: 15px;
+}
+.ref .card p:nth-child(2){
+color: #777;
+font-size: 14px;
+display: flex;
+flex-direction: row-reverse;
+}
+.ref hr{
+ width: 70%;
+ background-color: #777;
+ margin-left: 27%;
+ position: absolute;
+ top:55%;
+}
+.ref hr:nth-child(2){
+    width: 70%;
+    background-color: #777;
+    margin-left: 27%;
+    position: absolute;
+    top:87%;
+   }
+   .ref .card2 h4{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: -1;
+}
+.ref .card2 .text p{
+    text-align: center;
+   color: #777;
+   margin-bottom: 64px;
+}
+.ref .prog {
+    background-color: #dedadc;
+    height: 30px;
+    margin-left: 30px;;
+    margin-bottom: 20px;
+  }
+.ref .prog-holder h4{
+text-align: left;
+margin-left: 40px;
+font-size: 15px;
+margin-bottom: 20px;
+}
+.ref .prog span {
+    display: block;
+    background-color: var(--main-color);
+    height: 100%;
+    position: relative;
+  }
+  .ref .prog span::before {
+    content: attr(data-progress);
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: -40px;
+    right: -18px;
+    padding: 4px 0;
+    width: 40px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  .ref .prog span::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    border-color: black transparent transparent;
+    right: -8px;
+    top: -15px;
+  }
+/*end ref*/
+/*start after*/
+.after{
+    background-image:url(../images/quote.jpg);
+    background-size: cover;
+    height: 305px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.after::before{
+    content: "";
+    background-color: rgb(0 0 0 / 70%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.after .cont{
+    position: absolute;
+    color: white;
+    width: 75%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    line-height: 1.4;
+}
+.after h6{
+    padding: 20px;
+    font-size: 26px;
+    font-weight: lighter;
+}
+/*End after*/
+/*start price*/
+.pricing{
+    padding-top: var(--main-padding-top);
+    padding-bottom: 140px;
+}
+.header{
+    text-align: center;
+}
+.header h2{
+    font-size: 250%;
+    font-weight: 500;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+.header p{
+    color: #777;
+    padding-top: 25px;
+    line-height: 1.8;
+    max-width: 40%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.pricing .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+    gap:30px;
+    padding-top: 80px;
+}
+.pricing .card{
+    background-color: #fcfcfc;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid var(--main-color);
+}
+.pricing .card .head{
+ text-align: center;
+ border-bottom: 1px solid var(--main-color);  
+ position: relative;  
+ padding-top: 20px;
+ padding-bottom: 50px;
+}
+.pricing .card .head h2{
+    font-weight: 800;
+    font-size: 60px;
+    margin-top: 15px;
+}
+.pricing .card .head h2::before{
+    content: "$";
+    font-weight: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+.pricing .card .head h2::after{
+    content: "/Mo";
+    font-size: 20px;
+    position: absolute;
+    top:53%;
+    left: 72%;
+}
+.pricing .card .head p{
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.pricing .card .body{
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid var(--main-color);
+    padding-bottom: 20px;
+}
+.pricing .card .foot{
+    text-align: center;
+    margin-top: 30px;
+    min-width: 250px;
+    padding: 20px 0;
+   background-color: var(--main-color);
+   border: 1px solid white;
+}
+.pricing li{
+    padding-top: 22px;
+    width: 60%;
+    position: relative;
+    left: 20%;
+}
+.pricing li:not(:last-child){
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--main-color);
+}
+.pricing .foot a{
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: white;
+}
+.pricing .foote{
+    padding-top: 60px;
+    font-size: 20px;
+    text-align: center;
+}
+.pricing .foote p{
+    margin-bottom: 40px;
+}
+.pricing .foote  a{
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px 40px;
+    background-color: var(--main-color);
+color: white;
+}
+/*end price*/
+/*Start after2*/
+.after2{
+    padding-top: 100px;
+    margin-bottom: 100px;
+    background-image: url(../images/subscribe.jpg);
+    background-size: cover;
+    height: 275px;
+    position: relative;
+    color: white;
+}
+.after2::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%);
+}
+.after2 .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 991px) {
+    .after2 .container {
+      flex-direction: column;
+    }
+  }
+  .after2 form {
+    display: flex;
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+  }
+  .after2 form i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
+  }
+  .after2 form input[type="email"] {
+    border: 1px solid white;
+    border-right: none;
+    background: none;
+    padding: 20px 20px 20px 60px;
+    caret-color: var(--main-color);
+    width: calc(100% - 130px);
+  }
+  .after2 form input[type="submit"] {
+    width: 130px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-left: none;
+    text-transform: uppercase;
+ cursor: pointer;
+}
+  .after2 form input[type="email"]:focus,
+  .after2 form input[type="submit"]:focus {
+    outline: none;
+  }
+  .after2 form ::placeholder {
+    color: white;
+  }
+  .after2 p {
+    line-height: 2;
+    margin-left: 50px;
+  }
+  @media (max-width: 991px) {
+    .after2 p {
+      margin: 30px 0 0;
+    }
+  }/*End after2*/
+/*Start contacct*/
+
+.contact .cards{
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.contact  .card1 {
+    flex-basis: 70%;
+  }
+.contact .card1 input:not(:last-child){
+width: 100%;
+padding: 20px;
+margin-bottom: 30px;;
+border: 1px solid #ccc;
+}
+.contact .card1 input:last-child{
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.contact .card1 textarea{
+    width: 100%;
+    padding:20px;
+    margin-bottom: 30px;;   
+    height: 200px;
+}
+.contact .card2 span{
+    color: #777;
+    display: block;
+    padding: 5px 0;
+}
+.contact .card2 h4{
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.contact .card2 {
+    flex-basis: 25%;
+  }
+  .contact .card2  .card21{
+      margin-bottom: 80px;
+      text-transform: uppercase;
+  }
+  .contact .card22 h4{ 
+      text-transform: uppercase;
+  }
+  .contact .card22 address{
+      color: #777;
+       line-height: 1.8;;
+    } 
+/*End contact*/
+/*Start footer*/
+.footer{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-image: url(../images/subscribe.jpg);
+    height: 380px;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+.footer::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0 0 0 / 70%);
+}
+.footer img {
+    position: relative;
+  }
+  .footer .first {
+      position: relative;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+    font-size: 22px;
+    width: 80%;
+    margin: 20px auto;
+      color: white;
+}
+.footer .social-icons i {
+    padding: 10px;
+color: white;
+position: relative;  
+padding-bottom: 80px;
+}
+.footer .copyright{
+    color: white;
+    position: relative;
+}
+.footer .copyright span{
+    color: var(--main-color);
+    font-weight: 800;
+}
+/*End footer*/
